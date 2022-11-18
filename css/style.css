@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.banner {
+  background-image: url(../images/banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.height {
+  min-height: 90vh;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #33417c;
+  text-transform: uppercase;
+}
+.banner h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 65px;
+  text-align: center;
+}
+.icon {
+  position: absolute;
+  left: 98%;
+  bottom: 50px;
+  color: #fff;
+  font-size: 22px;
+  transform: translate(-50%);
+  animation: updown 1s linear infinite;
+}
+@keyframes updown {
+  0% {
+    bottom: 70px;
+  }
+  100% {
+    bottom: 50px;
+  }
+}
+.who-we-are {
+  padding: 100px 0;
+}
+.who-we-are span {
+  display: block;
+  height: 3px;
+  width: 50px;
+  background: #e55229;
+}
+
+.who-we-are h1 {
+  margin: 15px 0;
+  color: #33417c;
+  font-size: 40px;
+}
+
+.who-we-are p {
+  color: #bab5b2;
+}
+.what-we-do {
+  padding: 100px 0;
+  color: #fbfbfb;
+  background-image: url(../images/p-9.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 85%;
+}
+.what-we-do span {
+  display: block;
+  height: 3px;
+  width: 50px;
+  background: #e55229;
+
+  margin: auto;
+}
+.what-we-do h1 {
+  text-transform: uppercase;
+  font-size: 35px;
+  margin: 15px 0;
+  text-align: center;
+  color: #33417c;
+}
+.item {
+  position: relative;
+}
+.item::before {
+  position: absolute;
+  content: " ";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+0,36226f+100&0+1,0+1,1+71 */
+  background: -moz-linear-gradient(
+    top,
+    rgba(125, 185, 232, 0) 0%,
+    rgba(124, 183, 231, 0) 1%,
+    rgba(75, 78, 146, 1) 71%,
+    rgba(54, 34, 111, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(125, 185, 232, 0) 0%,
+    rgba(124, 183, 231, 0) 1%,
+    rgba(75, 78, 146, 1) 71%,
+    rgba(54, 34, 111, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(125, 185, 232, 0) 0%,
+    rgba(124, 183, 231, 0) 1%,
+    rgba(75, 78, 146, 1) 71%,
+    rgba(54, 34, 111, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#36226f',GradientType=0 ); /* IE6-9 */
+  transition: 0.4s all ease-in-out;
+}
+.item:hover::before {
+  height: 100%;
+}
+.content {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  transition: 0.4s all ease-in-out;
+  opacity: 0;
+}
+.item:hover .content {
+  opacity: 1;
+  top: 50%;
+}
+.content h1 {
+  color: #fff;
+  font-size: 30px;
+}
+.icon-two {
+  position: absolute;
+  left: 45%;
+  bottom: 50px;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 25px;
+  opacity: 0;
+  transition: 0.4s all ease-in-out;
+}
+.item:hover .icon-two {
+  opacity: 1;
+  left: 50%;
+}
+.item-three {
+  position: relative;
+}
+.content-two {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+}
+.content-two h1 {
+}
+.OUR-ATTORNEYS {
+  background-image: url(../images/p-10.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.OUR-ATTORNEYS-height {
+  padding: 100px 0;
+}
+
+.OUR-ATTORNEYS-height span {
+  display: block;
+  height: 3px;
+  width: 50px;
+  background: red;
+  margin-top: 30px;
+}
+.OUR-ATTORNEYS-height h1 {
+  /* color: red; */
+  color: #fff;
+  font-size: 46px;
+  margin-top: 20px;
+}
+.OUR-ATTORNEYS-height p {
+  color: #a3a0cc;
+  margin-top: 20px;
+}
+.OUR-ATTORNEYS-height h4 {
+  color: #e76128;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.OUR-ATTORNEYS-item {
+  position: relative;
+}
+.OUR-ATTORNEYS-item::before {
+  position: absolute;
+  content: "";
+  left: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 0%;
+  transition: 0.5s all ease-in-out;
+
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3a1372+58,3a1372+100&0+57,1+100 */
+  background: -moz-linear-gradient(
+    top,
+    rgba(58, 19, 114, 0) 57%,
+    rgba(58, 19, 114, 0.02) 58%,
+    rgba(58, 19, 114, 1) 100%
+  );
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(58, 19, 114, 0) 57%,
+    rgba(58, 19, 114, 0.02) 58%,
+    rgba(58, 19, 114, 1) 100%
+  );
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(58, 19, 114, 0) 57%,
+    rgba(58, 19, 114, 0.02) 58%,
+    rgba(58, 19, 114, 1) 100%
+  );
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#003a1372', endColorstr='#3a1372', GradientType=0);
+  /* IE6-9 */
+}
+.OUR-ATTORNEYS-item:hover::before {
+  height: 100%;
+}
+
+.OUR-ATTORNEYS-content {
+  position: absolute;
+  left: 23px;
+  top: 80%;
+  transition: 0.5s all ease-in-out;
+  opacity: 0;
+}
+.OUR-ATTORNEYS-item:hover .OUR-ATTORNEYS-content {
+  opacity: 1;
+  top: 70%;
+}
+.OUR-ATTORNEYS-content h1 {
+  color: #fff;
+  font-size: 30px;
+}
+.The-language {
+  padding: 100px 0;
+}
+.The-language h1 {
+  color: #36226f;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.The-language span {
+  display: block;
+  height: 3px;
+  width: 50px;
+  background: red;
+  margin: auto;
+}
+.height-one {
+
+}
+.height-one h5 {
+  text-transform: uppercase;
+  color: #36226f;
+}
+.height-one p {
+  color: #bab5b3;
+}
+.height-one h4 {
+  text-transform: uppercase;
+  color: #e76128;
+  font-weight: 400;
+}
+.contract {
+  background-color: #36226f;
+  padding: 66px 0 20px 0;
+}
+.contract span {
+  display: block;
+  height: 3px;
+  width: 50px;
+  background: #e76128;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.contract h1 {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.height-two form {
+  text-align: center;
+  padding: 20px;
+}
+.height-two input {
+  width: 100%;
+  margin-bottom: 41px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  border-bottom: 1px solid #e76128;
+  outline: none;
+}
+.height-two input::placeholder{
+  color: #fff;
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled):hover {
+  background-color: #e76128; 
+  background: transparent;
+  padding: 0;
+  padding: 8px 50px;
+  border: 1px solid #e76128;
+  color: #fff;
+  transition: 0.5s all ease-in-out;
+  width: inherit;
+  text-transform: uppercase;
+}
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled):hover {
+  background-color: #e76128;
+}
+footer {
+  background: #16102b;
+  padding: 20px 0;
+}
+
+.footer_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_content p {
+
+  margin: 0;
+  color: #6c64a0;
+  font-size: 12px;
+}
+
+.footer_content ul {
+
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+
+.footer_content ul li {
+  margin-left: 20px;
+}
+
+.footer_content ul li a {
+
+  text-decoration: none;
+  color: #c1bddb;
+}
